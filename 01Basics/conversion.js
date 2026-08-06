@@ -54,3 +54,15 @@ console.log(null == 0); // false
 console.log(null >= 0); // true
 // The >= comparison also converts null to a number (0).
 // It becomes 0 >= 0, which is true.
+
+console.log(undefined > 0);
+console.log(undefined  == 0);
+console.log(undefined  >= 0);
+// It gives false in all the three cases 
+
+
+
+// == does normal checks (It accepts conversion)
+// === does strict checking (No flexibility for conversion)
+console.log("2"==2); // Will pass kuki it accepts conversion 
+console.log("2"===2); // Will do a strict checking
