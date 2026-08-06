@@ -14,3 +14,5 @@ let obj1={
 const myFunction=function(){
     console.log("Hi, This is Prateek Sharma !!")
 }
+
+// Study typeof (typeof null --> undefined)
