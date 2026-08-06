@@ -61,7 +61,6 @@ console.log(undefined  >= 0);
 // It gives false in all the three cases 
 
 
-
 // == does normal checks (It accepts conversion)
 // === does strict checking (No flexibility for conversion)
 console.log("2"==2); // Will pass kuki it accepts conversion 
