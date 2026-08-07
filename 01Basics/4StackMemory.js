@@ -5,7 +5,6 @@ Heap Memory is used by Non Primitive Data Types
 
 // Keep in Mind --> Whoever Goes into the Heap, we gets the reference not the value 
 
-
 // *************************CASE STUDY-1***************************
 let firstname="Prateek";
 let fname=firstname;
@@ -13,7 +12,9 @@ fname="Nikhil";
 
 console.log(firstname);
 console.log(fname);
-// Because here copy by value happened into the stack 
+// Because here copy by value happened into the stack
+
+
 
 // *************************CASE STUDY-2***************************
 let obj1={
