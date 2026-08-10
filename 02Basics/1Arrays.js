@@ -57,4 +57,10 @@ console.log(Array.isArray("PRATEEK"));
 console.log(Array.isArray([1,2]));
 
 console.log(Array.from("Prateek"));
-console.log(Array.from({name:"Prateek"}));
+console.log(Array.from({name:"Prateek"})); // Interesting thing to be answered whenever Asked 
+
+let sc1=100;
+let sc2=200;
+let sc3=300;
+
+console.log(Array.of(sc1,sc2,sc3));
