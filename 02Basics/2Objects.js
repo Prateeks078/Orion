@@ -50,4 +50,11 @@ const JsUser2={
 
 
 console.log(typeof JsUser2.mySym);
-//
+
+JsUser2.email="abc@google.com";
+console.log(JsUser2);
+
+Object.freeze(JsUser2);
+
+JsUser2.email="abc@microsoft.com"; // It won't give me error, but nevertheless it also wont get changed becuause it is in freezed mode 
+console.log(JsUser2);
