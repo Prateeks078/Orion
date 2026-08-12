@@ -54,7 +54,19 @@ console.log(typeof JsUser2.mySym);
 JsUser2.email="abc@google.com";
 console.log(JsUser2);
 
-Object.freeze(JsUser2);
+// Object.freeze(JsUser2);
 
 JsUser2.email="abc@microsoft.com"; // It won't give me error, but nevertheless it also wont get changed becuause it is in freezed mode 
 console.log(JsUser2);
+
+
+JsUser.greetings=function(){
+    console.log("Hello Prateek, Js User this side !!");
+}
+JsUser.greetings();
+
+
+JsUser2.greetings=function(){
+    console.log(`Hey Prateek, Js user this side and my location is ${this.location}`);
+}
+JsUser2.greetings();
