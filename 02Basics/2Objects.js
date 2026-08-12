@@ -18,3 +18,36 @@ console.log(JsUser["email"]); // Aliter Way of Data Retrieval
 
 // console.log(JsUser.full name) -----> Wont be able to access via dot
 console.log(JsUser["full name"]);
+
+// Take a Symbol, add it in object as key and print 
+const mySym=Symbol("Key1");
+
+// const JsUser2={
+//     fname:"Prateek",
+//     lname:"Sharma",
+//     age:22,
+//     location:"Rajasthan",
+//     email:"itsprateek078@gmail.com",
+//     isLoggedIn:false,
+//     lastLoginDays:["Monday", "Tuesday"],
+//     "full name": "PRATEEK SHARMA",
+//     mySym:"Key1"
+// }
+
+// I have used symbol as key but not as a symbol still becasue typeof is still --> String
+
+const JsUser2={
+    fname:"Prateek",
+    lname:"Sharma",
+    age:22,
+    location:"Rajasthan",
+    email:"itsprateek078@gmail.com",
+    isLoggedIn:false,
+    lastLoginDays:["Monday", "Tuesday"],
+    "full name": "PRATEEK SHARMA",
+    [mySym]: "myKey1"
+}
+
+
+console.log(typeof JsUser2.mySym);
+//
