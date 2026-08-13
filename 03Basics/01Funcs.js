@@ -12,7 +12,7 @@ console.log(addnum(2,3));
 
 
 // variant2-- Override happens
-function loginmessg(username="Sam"){
-    return `${username} just logged in the system`;
+function loginmessg(username="Sam"){ // if nothing came into the argument, then it will override 
+    return `${username} just logged in the system`; 
 }
-console.log(loginmessg("George"));
+console.log(loginmessg("George")); 
