@@ -39,3 +39,6 @@ console.log(obj4);
 console.log(Object.keys(TinderUser));
 console.log(Object.values(TinderUser));
 console.log(Object.entries(TinderUser));
+
+console.log(TinderUser.hasOwnProperty("loggedin")); // Should return true
+console.log(TinderUser.hasOwnProperty("Login")); // Should return false
