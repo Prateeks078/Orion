@@ -11,7 +11,7 @@ function addnum(num1,num2){
 console.log(addnum(2,3));
 
 
-// variant2-- Override happens
+// variant2-- Override happ
 function loginmessg(username="Sam"){ // if nothing came into the argument, then it will override 
     return `${username} just logged in the system`; 
 }
