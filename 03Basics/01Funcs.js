@@ -53,3 +53,20 @@ function handleobject(anyobject){
 
 // Invoking the Function
 handleobject(user); // I can pass whichever Object I want to 
+
+// Aliter way of Invoking the function with object passing 
+handleobject({
+    username:"Satish",
+    price:90909
+})
+
+// ----------------------------------xxxxxxxxx--------------------------------------------
+
+// Passing Array in Functions 
+const arr=["Harry", "Joel", "Garry"];
+
+function handlingarray(anyarray){
+    return anyarray[1];
+}
+
+console.log(handlingarray(arr));
