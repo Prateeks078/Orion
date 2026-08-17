@@ -41,3 +41,15 @@ console.log(calculatePrice2(500,600,890));
 
 
 // FAQ Concepts
+// Passing Objects as Parameters in Functions
+const user={
+    username:"Prateek",
+    price:390
+}
+
+function handleobject(anyobject){
+    console.log(`The name of User is: ${anyobject.username} and the Price of the User is:${anyobject.price}`);
+}
+
+// Invoking the Function
+handleobject(user); // I can pass whichever Object I want to 
