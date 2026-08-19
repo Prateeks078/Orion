@@ -10,7 +10,7 @@ function sayadd(num1, num2){
     return num1+num2;
 }
 
-console.log(mul(5,7)); // This will give me the error 
+console.log(mul(5,7)); // This will give me the error because function is wired up with a vairable and ariable is not yet declared, So Keep In Mind 
 const mul=function saymul(num1,num2){
     return num1*num2;
 }
