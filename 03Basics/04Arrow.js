@@ -15,7 +15,7 @@ console.log(user.this); // WILL GIVE EMPTY BECAUSE WE ARE IN A NODE ENVIRONMENT,
 // IF I RUN IN MY BROWER, THEN BROWSER KE ANDR GLOBAL OBJECT IS A  WINDOW OBJECT .....
 
 
-// Some Kind of Mystery
+// Some Kind of Mysterical Thing
 function chai(){
     console.log(this);
 }
@@ -31,7 +31,6 @@ chai1();
 // -----> JavaScript checks the object that this refers to. 
 // You never created a username property on that object, we did'nt even created an object man
 // So there's nothing to find → undefined.
-
 
 
 // -----------> Introduction to Arrow Functions -------------
