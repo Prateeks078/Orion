@@ -10,3 +10,48 @@ const user={
 user.welcomeMesage();
 user.username="Tinku";
 user.welcomeMesage();
+
+console.log(user.this); // WILL GIVE EMPTY BECAUSE WE ARE IN A NODE ENVIRONMENT, OUR THIS IS REFERRING TO AN EMPTY OBJECT
+// IF I RUN IN MY BROWER, THEN BROWSER KE ANDR GLOBAL OBJECT IS A  WINDOW OBJECT .....
+
+
+// Some Kind of Mystery
+function chai(){
+    console.log(this);
+}
+chai();
+
+
+function chai1(){
+    let uername="HPH";
+    console.log(this.username);
+}
+
+chai1();
+// -----> JavaScript checks the object that this refers to. 
+// You never created a username property on that object, we did'nt even created an object man
+// so there's nothing to find → undefined.
+
+
+
+// -----------> Introduction to Arrow Functions -------------
+
+const person = {
+    username: "HPH",
+
+    normal: function () {
+        console.log(this.username);
+    },
+
+    arrow: () => {
+        console.log(this.username);
+    }
+};
+
+person.normal();
+person.arrow(); // It will give undefined becasue Arrow Functions inherit this from the surrounding function/scope 
+
+// -----------> VERY VERY VERY VERY IMPORTANT <------------
+
+
+
