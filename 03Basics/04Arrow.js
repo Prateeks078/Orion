@@ -69,10 +69,11 @@ console.log(addnum1(2,4));
 const addnum2=(num1,num2)=>(num2+num2); // Implicit Return 
 console.log(addnum2(4,5));
 
-// Miscellanious Way of fetching within the Arrow Functions
+// Miscellanious Way of fetching within the Arrow Functions- FOrmat 1
 const displayobj=(num1,num2)=>{
     return {username:"AnC "}
 }
 
+// Aliter Format 
 const displayobj2=(num1,num2)=>({username:"TeamGenius"})
 console.log(displayobj());
