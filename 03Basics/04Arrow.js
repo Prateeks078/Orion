@@ -30,7 +30,7 @@ function chai1(){
 chai1();
 // -----> JavaScript checks the object that this refers to. 
 // You never created a username property on that object, we did'nt even created an object man
-// so there's nothing to find → undefined.
+// So there's nothing to find → undefined.
 
 
 
@@ -49,9 +49,22 @@ const person = {
 };
 
 person.normal();
-person.arrow(); // It will give undefined becasue Arrow Functions inherit this from the surrounding function/scope 
-
+person.arrow(); // It will give undefined because Arrow Functions inherit this from the surrounding function/scope 
 // -----------> VERY VERY VERY VERY IMPORTANT <------------
 
 
+// Ways of writing
 
+// 1st Way 
+const addnum=()=>{
+    console.log("Hi Preeti");
+}
+addnum();
+
+// 2nd Way
+const addnum1=(num1,num2)=>{return num1+num2}
+console.log(addnum1(2,4));
+
+// 3rd Aliter Way
+const addnum2=(num1,num2)=>(num2+num2);
+console.log(addnum2(4,5));
