@@ -66,5 +66,13 @@ const addnum1=(num1,num2)=>{return num1+num2}
 console.log(addnum1(2,4));
 
 // 3rd Aliter Way
-const addnum2=(num1,num2)=>(num2+num2);
+const addnum2=(num1,num2)=>(num2+num2); // Implicit Return 
 console.log(addnum2(4,5));
+
+// Miscellanious Way of fetching within the Arrow Functions
+const displayobj=(num1,num2)=>{
+    return {username:"AnC "}
+}
+
+const displayobj2=(num1,num2)=>({username:"TeamGenius"})
+console.log(displayobj());
