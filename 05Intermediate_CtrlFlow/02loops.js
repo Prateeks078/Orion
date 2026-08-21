@@ -23,3 +23,20 @@ for(let i=0;i<10;i++){
 }
 
 // While Loops
+let ind=0;
+while(ind<myarray.length){
+    console.log(`The name of the superhero is: ${myarray[ind]}`);
+    ind++;
+}
+
+// Do while loop
+let x=0;
+do{
+    console.log(`My Super Hero is: ${myarray[x]}`);
+    x++;
+}while(x<myarray.length)
+
+
+
+// ----------------------------------**** HIGHER ORDER ARRAY LOOPS ****---------------------------------------------
+
