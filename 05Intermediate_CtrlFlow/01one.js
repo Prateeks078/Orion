@@ -54,5 +54,21 @@ if(userEmail.length===0)
     console.log("Email is Empty");
 
 const emptyobj={};
-if(Object.keys().length==0)
+if(Object.keys(emptyobj).length==0)
     console.log("Object is Empty !!");
+
+// Null Coaelescing Operator (??) --> It is used to check if the value is null or undefined, if it is then it will return the value on the right side of the operator otherwise it will return the value on the left side of the operator
+var val1=100??10;
+var val2=null??909;
+var val3=null??90??989;
+var val4=null??undefined??989;
+
+console.log(val1);
+console.log(val2);
+console.log(val3);
+console.log(val4);
+
+
+// Ternary Operator
+const samosaprice=90;
+samosaprice<=100 ? console.log("Samosa is cheaper") : console.log("Samosa is Costlier !!")
