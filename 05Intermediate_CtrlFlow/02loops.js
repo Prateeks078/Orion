@@ -40,3 +40,13 @@ do{
 
 // ----------------------------------**** HIGHER ORDER ARRAY LOOPS ****---------------------------------------------
 
+const numbers=[1,2,3,4,5,6,7,8];
+// Using For Of Looping 
+for(const num of numbers){
+    console.log(num);
+}
+
+const greetings="Hello World"
+for(const greet of greetings){
+    console.log(greet);
+}
