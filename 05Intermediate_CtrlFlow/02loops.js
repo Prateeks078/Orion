@@ -47,6 +47,6 @@ for(const num of numbers){
 }
 
 const greetings="Hello World"
-for(const greet of greetings){
-    console.log(greet);
+for(const greeet of greetings){
+    console.log(greeet);
 }
