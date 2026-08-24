@@ -51,10 +51,99 @@ for(const greeet of greetings){
     console.log(greeet);
 }
 
-// Using Maps 
+// ---------------------------------- USING MAPS FUNCTIONALITY ---------------------------------------------
+
 const map=new Map();
 map.set('IN', "India");
 map.set('USA', "Unisted States Of America");
 map.set('Fr', "France");
 
 console.log(map);
+
+/// Iterating with the help of for of loop 
+
+for(const [key,value] of map){
+    console.log(key,'-->', value);
+}
+
+
+// ---------------------------------- USING FOR-IN LOOPING FUNCTIONALITY ---------------------------------------------
+
+//  PROBLEM-STATEMENT
+// TRY TO TRAVERSE THE OBJECTS WITH THE HELP OF FOR-LOOPS
+
+const myobj={
+    js:"Java-Script",
+    cpp:"C++",
+    rb:"Ruby",
+    swift:"Swift By Apple"
+}
+
+// Will try to traverse with the help of FOR-OF Looping
+
+// for(const iterator of myobj){
+//     console.log(iterator);
+//}
+
+// ----> Will be giving myObj is not iterable Error 
+
+// FOR-IN Looping comes into the Picture 
+for(const key in myobj){
+    console.log(`The key for the Object is ${key} and the value of this particular key is: ${myobj[key]}`);
+}
+
+// FOR-IN lOOPING WILL PLAY ITS PART IN ONLY INTERABLE THINGS (WON'T BE APPLICABLE IN CASE OF MAPS)
+const arr=["harry", "ron", "hermione"];
+for(const itr in arr){
+    console.log(itr);
+    console.log(arr[itr]);
+}
+
+
+
+// ---------------------------------------- FOR EACH LOOPING ---------------------------------------
+const Heroes=["Batman","Superman","Hanuman", "Captain-America"];
+
+// Normal Function Call
+Heroes.forEach(function(itr){
+    console.log(itr);
+})
+
+// Using Arrow Functions
+Heroes.forEach((itr)=>{
+    console.log(itr);
+})
+
+// Function is written smwhere else and I wanna use it 
+function Printme(item){
+    console.log(`Hey, Please Print the ${item}`);
+}
+
+Heroes.forEach(Printme);
+
+// Miscellanious Aliter to Find Our Own Way
+Heroes.forEach((item, ind, arr)=>{
+    console.log(item,ind,arr);
+});
+
+
+// ---------------------------------------- USING THESE KNOWLEDGE FOR FETCHING THE DATA FROM DB -----------
+const languages=[
+    {
+        languageName:"Hindi",
+        languageAuthor:"Maithli"
+    },
+    {
+        languageName:"Urdu",
+        languageAuthor:"ABC"
+    },
+    {
+        languageName:"Punjabi",
+        languageAuthor:"XYZ"
+    }
+]
+
+languages.forEach((item)=>{
+    console.log(item.languageName);
+    console.log(item.languageAuthor);
+})
