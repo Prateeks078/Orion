@@ -10,7 +10,7 @@ for(let i=0;i<myarray.length;i++){
 
 // Usage of Break
 for(let i=0;i<myarray.length;i++){
-    if(myarray[i]=="Hulk")
+    if(myarray[i]=="Green Hulk")
         break;
     console.log(myarray[i]);
 }
