@@ -38,7 +38,7 @@ do{
 
 
 
-// ----------------------------------**** HIGHER ORDER ARRAY LOOPS ****---------------------------------------------
+// ---------------------------------- HIGHER ORDER ARRAY LOOPS ---------------------------------------------
 
 const numbers=[1,2,3,4,5,6,7,8];
 // Using For Of Looping 
@@ -50,3 +50,11 @@ const greetings="Hello World"
 for(const greeet of greetings){
     console.log(greeet);
 }
+
+// Using Maps 
+const map=new Map();
+map.set('IN', "India");
+map.set('USA', "Unisted States Of America");
+map.set('Fr', "France");
+
+console.log(map);
