@@ -121,7 +121,7 @@ function Printme(item){
 
 Heroes.forEach(Printme);
 
-// Miscellanious Aliter to Find Our Own Way
+// Miscellanious Aliter to Find Our Own Wayy
 Heroes.forEach((item, ind, arr)=>{
     console.log(item,ind,arr);
 });
