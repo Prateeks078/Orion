@@ -114,10 +114,11 @@ Heroes.forEach((itr)=>{
     console.log(itr);
 })
 
-// Function is written smwhere else and I wanna use it 
+// Function is written smwhere else and I wanna use it..
 function Printme(item){
     console.log(`Hey, Please Print the ${item}`);
 }
+
 
 Heroes.forEach(Printme);
 
