@@ -49,3 +49,15 @@ myNumbers.forEach((item)=>{
     newNums101.push(item+101);
 })
 console.log(newNums3);
+
+// ----------------------------------------- Chaining of Maps and Filter into the Code -------------------------------------------
+const Numerical=[1,2,3,4,5,6,7,8,9,10];
+let newNumerical=[];
+
+newNumerical=Numerical
+                .map((x)=>x*10)
+                .map((x)=>x+12)
+                .filter((x)=>x>=50)
+
+console.log(newNumerical);
+
