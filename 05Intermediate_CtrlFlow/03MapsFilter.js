@@ -24,7 +24,6 @@ const newNums2=myNums.filter((item)=>item>6)
 console.log(newNums2);
 
 // Aliter way is to use ForEach Looping Criteria
-
 const myNums2=[1,2,3,4,5,6,7,8,9,10];
 const filteredArr=[];
 
@@ -35,3 +34,18 @@ myNums2.forEach((num)=>{
 })
 console.log(filteredArr);
 
+// ----------------------------------------- Using Maps in the Code -------------------------------------------
+
+const myNumbers=[1,2,3,4,5,6,7,8,9,10];
+const newNums1=myNumbers.map((n)=>{return n+101});// 1st way
+const newNums3=myNumbers.map((n)=>n+101);// 2nd way
+console.log(newNums1);
+console.log(newNums3);
+
+
+// Can be done with foreach as well
+const newNums101=[];
+myNumbers.forEach((item)=>{
+    newNums101.push(item+101);
+})
+console.log(newNums3);
