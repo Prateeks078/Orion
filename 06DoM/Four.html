@@ -13,4 +13,16 @@
         <li>Ruby</li>
     </ul>
 </body>
+<script>
+        function addLanguage(langName){
+           const li=document.createElement('li');
+           li.innerText=`${langName}`;
+
+           const Lang=document.querySelector('.language');
+           Lang.appendChild(li);
+        }
+
+        addLanguage("Python");
+        addLanguage("Csharp");
+</script>
 </html>
