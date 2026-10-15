@@ -5,7 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning</title>
 </head>
-<body>
-    
+<body style="background-color: black; color: white;">
+     <div class="parent">
+
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+
+     </div>
 </body>
+    <script>
+        const parent=document.querySelector('.parent')
+        console.log(parent);
+        console.log(parent.children);
+        console.log(parent.children[1]);
+        console.log(parent.children[2].innerHTML);
+
+        // Printing all the childrens of the parent over here 
+        for(let i=0;i<parent.children.length;i++){
+            console.log(parent.children[i].innerHTML);
+        }
+
+        // Let us play with the styling of the children for the parent
+        parent.children[2].style.color="blue";
+        console.log(parent.children[2].innerHTML);
+
+        console.log(parent.firstElementChild);
+        console.log(parent.lastElementChild);
+
+
+
+        console.log("Going Vice Versa.....")
+        // Going Vice Versa 
+        const ekdin=document.querySelector('.day');
+        console.log(ekdin);
+
+        console.log(ekdin.parentElement);
+        console.log(ekdin.nextElementSibling);
+        console.log(ekdin.nextElementSibling.nextElementSibling);
+
+
+        console.log("--------------------");
+        console.log("NODES: ", parent.childNodes); // Very Very Very Important 
+
+    </script>
+    
 </html>
