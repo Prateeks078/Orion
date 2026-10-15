@@ -5,7 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chai & Code</title>
 </head>
-<body>
-    
+<body style="color:white; background-color:blue">
 </body>
+
+<script>
+
+// Step-1: Start Creating the DOM Element from scratch
+    const div=document.createElement('div');
+    console.log(div);
+
+// Step-2: Give this DOM Element a Class Name
+    div.className="main";
+    div.id=Math.round(Math.random()*10+1);
+
+// Step-3: Set the Attributes 
+    div.setAttribute("title", "geberated title");
+
+// Give it a bit of styling
+    div.style.backgroundColor="green";
+    div.style.padding="13px";
+
+    // This is one alternative, it would tk a very large round trip-time to bring-in content
+    // div.innerText="Hey TeamGenius Over Here "; 
+    // document.body.append(div);
+
+    // Second Alternative would be:
+    const addText=document.createTextNode("Hey, I am Prateek from TeamGenius !!");
+    div.appendChild(addText);
+    document.body.append(div);
+    
+</script>
 </html>
