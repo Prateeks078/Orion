@@ -22,7 +22,16 @@
            Lang.appendChild(li);
         }
 
+        function addOptiLanguage(langName){
+            const li=document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li);
+        }
+
         addLanguage("Python");
         addLanguage("Csharp");
+        addLanguage("TypeScript");
+
+        addOptiLanguage("Java");
 </script>
 </html>
