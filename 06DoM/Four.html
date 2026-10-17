@@ -33,5 +33,12 @@
         addLanguage("TypeScript"); // --> Learn about this Naive Function first of all 
 
         addOptiLanguage("Java"); // --> Learn about this function as well
+
+
+        // Editing the current ELEMENT 
+        const secondLang=document.querySelector("li:nth-child(2)");
+        secondLang.innerText="Prateek";
+        // U cant use here create Text Node and append because that will append
+        // If u really wanna use it so try using it with .replaceChild(...,...) thing and all
 </script>
 </html>
