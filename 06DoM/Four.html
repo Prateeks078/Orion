@@ -40,5 +40,9 @@
         secondLang.innerText="Prateek";
         // U cant use here create Text Node and append because that will append
         // If u really wanna use it so try using it with .replaceChild(...,...) thing and all
+
+        // Removing the Child from DOM
+        const LastChild=document.querySelector("li:last-child");
+        document.remove(LastChild);        
 </script>
 </html>
