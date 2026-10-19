@@ -4,7 +4,6 @@ const buttons=document.querySelectorAll(".button");
 const body=document.querySelector("body");
 console.log(buttons);
 
-
 // Because it was a Node-List, so we will be using ForEach
 buttons.forEach(function(button){
     console.log(button);
@@ -25,7 +24,7 @@ buttons.forEach(function(button){
         }
 
         if(e.target.id=='yellow'){
-            body.style.backgroundColor=e.target.id;
+            body.style.backgroundColor=e.target
         }
 
     })
