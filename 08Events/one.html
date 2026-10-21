@@ -58,10 +58,17 @@
 document.getElementById('images').addEventListener('click', function(e){
     console.log(e);
     console.log('Clicked Inside the UL');
-})
+},true)
 
 document.getElementById('owl').addEventListener('click', function(e){
     console.log('Clicked indise the Owl Again !!')
-})
+},true)
+
+// The concept is all about if both listeners are false, --> BUBBLING comes into picture 
+// If both the listeners are True, --> CAPTURING comes into  picture 
+// If Owl is true and Image is false, it goes from OWL->UL (True to False)
+// iF oWL IS false and Image is true, it goes from UL->OWL (True to False)
+
+
 </script>
 </html>
