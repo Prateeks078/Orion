@@ -30,11 +30,38 @@
                 <img width="200px" id="owl"
                 src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
                 alt="">
+
+                <!-- <img width="200px" id="owl"
+                src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                alt="" onclick="alert('Owl is Clicked !!')">   Not a Scalable Practice  -->
             </li>
                     <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
     </div>
 </body>
+<script>
+    // document.getElementById('owl').addEventListener('click', function(){
+    //     alert('Owl is Clicked Again !!')
+    // },false)
+
+// type, timestamp, defaultPrevented
+// target, toElement, srcElement, currentTarget,
+// clientX, clientY, screenX, screenY
+// altkey, ctrlkey, shiftkey, keyCode
+
+
+// False and True are all about Bubbling & Capturing --> Let's test it
+// So Bubbling is basically from bottom to top and Capturing is all about top to Bottom 
+// Write False for Bubbling which is by default and True for Capturing 
+
+document.getElementById('images').addEventListener('click', function(e){
+    console.log(e);
+    console.log('Clicked Inside the UL');
+})
+
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log('Clicked indise the Owl Again !!')
+})
+</script>
 </html>
-```
