@@ -55,19 +55,38 @@
 // So Bubbling is basically from bottom to top and Capturing is all about top to Bottom 
 // Write False for Bubbling which is by default and True for Capturing 
 
-document.getElementById('images').addEventListener('click', function(e){
-    console.log(e);
-    console.log('Clicked Inside the UL');
-},true)
 
-document.getElementById('owl').addEventListener('click', function(e){
-    console.log('Clicked indise the Owl Again !!')
-},true)
+
+// document.getElementById('images').addEventListener('click', function(e){
+//     console.log(e);
+//     console.log('Clicked Inside the UL');
+// },true)
+
+// document.getElementById('owl').addEventListener('click', function(e){
+//     console.log('Clicked indise the Owl Again !!')
+// },true)
+
+
 
 // The concept is all about if both listeners are false, --> BUBBLING comes into picture 
 // If both the listeners are True, --> CAPTURING comes into  picture 
 // If Owl is true and Image is false, it goes from OWL->UL (True to False)
 // iF oWL IS false and Image is true, it goes from UL->OWL (True to False)
+
+
+
+// -------------------  EXPERIMENTING WITH e.stopPropagation -----------------------
+
+
+document.getElementById('images').addEventListener('click', function(e){
+    console.log(e);
+    console.log('Clicked Inside the UL');
+},false)
+
+document.getElementById('owl').addEventListener('click', function(e){
+    console.log('Clicked on the Owl');
+    e.stopPropagation();
+},true)
 
 
 </script>
