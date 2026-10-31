@@ -103,8 +103,13 @@ document.getElementById('google').addEventListener('click', function(e){
 document.getElementById('images').addEventListener('click', function(e){
     console.log(e.target.parentNode); // If we would have gone w/o this parent-child thing, 
     // then it would have kept still Li over there, and would have deleted image anyway
-    let RemoveIt=e.target.parentNode;
-    RemoveIt.remove();
+
+    console.log(e.target.tagName);
+    
+    if(e.target.tagName==='IMG'){
+        let RemoveIt=e.target.parentNode;
+        RemoveIt.remove();
+    }
 })
 
 
