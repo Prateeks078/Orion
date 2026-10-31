@@ -85,8 +85,27 @@ document.getElementById('images').addEventListener('click', function(e){
 
 document.getElementById('owl').addEventListener('click', function(e){
     console.log('Clicked on the Owl');
-    e.stopPropagation();
+    // e.stopPropagation();
 },true)
+
+
+// ------------------- Usage of e.preventDefault ---------------------
+
+document.getElementById('google').addEventListener('click', function(e){
+    console.log("Google is being Clicked !!");
+    e.preventDefault();
+    e.stopPropagation();
+},false)
+
+
+// ------------------- Should be able to remove Li Within Just a Click ----------------
+
+document.getElementById('images').addEventListener('click', function(e){
+    console.log(e.target.parentNode); // If we would have gone w/o this parent-child thing, 
+    // then it would have kept still Li over there, and would have deleted image anyway
+    let RemoveIt=e.target.parentNode;
+    RemoveIt.remove();
+})
 
 
 </script>
