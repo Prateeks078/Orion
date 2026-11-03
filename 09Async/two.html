@@ -14,11 +14,21 @@
 <script>
 
     // Task is to start and say name with date and time as soon as START Button is clicked and should stop as soon as STOP Button is invoked !!
-    
-    const sayNameDate=setInterval(function(){
-        console.log("Prateek is calling at: ",Date.now());
-    },1000)
-    
+
+    let sayNameDate;
+
+    document.querySelector('#start').addEventListener('click', function(){
+        if(!sayNameDate){ // It Ensures that Only One Interval should start at a Time, No Multiple Intervals
+            sayNameDate=setInterval(function(){
+            console.log("Prateek is calling at: ",Date.now());
+            },1000) 
+        }
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(sayNameDate);
+        sayNameDate=null;
+    })
 
 </script>
 </html>
