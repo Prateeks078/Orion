@@ -15,7 +15,7 @@
 
     // Task is to start and say name with date and time as soon as START Button is clicked and should stop as soon as STOP Button is invoked !!
 
-    let sayNameDate;
+    let sayNameDate; // It Will be accessible to both the Event-Listeners..... (In-Scope to both)
 
     document.querySelector('#start').addEventListener('click', function(){
         if(!sayNameDate){ // It Ensures that Only One Interval should start at a Time, No Multiple Intervals
