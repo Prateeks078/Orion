@@ -20,12 +20,16 @@ const SayPrateek=function(){
 setTimeout(SayPrateek,4000)
 
 
-
-
 const changeText=function(){
     document.querySelector('h1').innerHTML="Best JS Course Here !!";
 }
-setTimeout(changeText,12000)
+const changeMe=setTimeout(changeText,12000)
+
+document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(changeMe);
+    console.log("STOPPED !!")
+})
+
 </script>
 
 </html>
