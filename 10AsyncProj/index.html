@@ -5,27 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Project - Background Changer</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #212121;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 15px;
+            background-color: #f1f1f1;
+        }
+
+        nav a {
+            padding: 10px 25px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 25px 30px;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        button {
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <a href="./" class="nav-link">Home</a>
-        <a href="https://www.youtube.com/" target="_blank"
-           class="nav-link">Youtube channel</a>
+    <nav>
+        <a href="/">Home </a>
+        <a href="https://www.youtube.com/" target="_blank">
+            Youtube channel
+        </a>
     </nav>
 
-    <main class="container">
+    <main>
         <h1>Start should change the Background color every second</h1>
 
-        <div class="controls">
-            <button id="start">Start</button>
-            <button id="stop" disabled>Stop</button>
-        </div>
-
-        <p id="status">Status: stopped</p>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
     </main>
+
+    <script>
+        
+
+    </script>
 
 </body>
 </html>
