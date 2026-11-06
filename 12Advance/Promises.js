@@ -22,3 +22,18 @@ new Promise(function(resolve,reject){
 }).then(function(){
     console.log("Promise 2 is Now Being Consumed !!");
 })
+
+
+// Third Promise creation and learning of passing the data over crossed bridge
+const thirdPromise = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve({
+            username:"Prateek Sharma",
+            email:"itsprateek078@gmail.com"
+        }) // I Passed an Object over here....
+    },5000)
+})
+
+thirdPromise.then(function(user){
+    console.log(user);
+})
