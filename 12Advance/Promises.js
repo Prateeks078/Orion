@@ -83,7 +83,6 @@ promiseFour
 const promiseFive=new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log("Async Js Task 101 is happening over here !!");
-        
         let error=true;
         if(!error){
             resolve({
@@ -97,4 +96,48 @@ const promiseFive=new Promise(function(resolve,reject){
     },8000)
 });
 
-// Now Handling with the help of Async-Await Functionality
+// Now Handling with the help of Async-Await Functionality (It is said that async await do not handles Errors gracefully )
+// If u want to handle the error gracefully then just try wrpping it inside the try catch blovk and u r good to go 
+
+async function consumePromiseFive(){
+    try {
+        const response=await promiseFive;
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
+}
+consumePromiseFive(); // This is very impt do not miss it at all 
+
+
+
+// Now Let us play with this real case URL--> https://jsonplaceholder.typicode.com/users
+
+// async function getAllUsers(){
+//     try {
+//         const response=await fetch('https://jsonplaceholder.typicode.com/users');
+//         const data=await response.json(); // It is also an asynchronous task yr keep in mind bro 
+//         console.log(data);
+//     } catch (error) {
+//         console.log("E: Some Glitch has Occured !!",error);
+//     }
+// }
+
+// getAllUsers();
+
+
+// Alternatively, Using Promise Concept to implement this fetch 
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((res)=>{
+    return res.json();
+})
+.then((data)=>{
+    console.log(data);
+})
+.catch((e)=>{
+    console.log(e);
+})
+.finally(()=>{
+    console.log("Finally, i am at the very end bro !!")
+})
