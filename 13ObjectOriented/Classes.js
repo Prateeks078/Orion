@@ -19,15 +19,21 @@ console.log(this);
 
 
 
-// -----------------------------------------------------------------------------
+// ------------------------------------- Importance of NEW Keyword ----------------------------------------
 
 function User(username,scholar_no,mother_name,father_name){
     this.username=username;
     this.scholar_no=scholar_no;
     this.mother_name=mother_name;
     this.father_name=father_name;
+
+    // return this; // Returning is optional but it's a good practice 
 }
 
-const UserOne=User("chiku",4567,"Mrs. Atkinson", "Mr. Atkinson");
-const UserTwo=User("chiku2",7890,"Mrs Albert", "Mr. Albert");
+const UserOne=new User("chiku",4567,"Mrs. Atkinson", "Mr. Atkinson");
+const UserTwo=new User("chiku2",7890,"Mrs Albert", "Mr. Albert");
+// new keyword gives us a complete new instance everytime 
+// hadnt it be there then we would have got same chiku2 even if i would have printed UserOne 
 
+console.log(UserOne);
+console.log(UserTwo);
