@@ -30,3 +30,6 @@ T1.addCourse();
 const U1=new User("userFirst");
 U1.logMe();
 // U1.addCourse(); // This will throw me an error ....
+
+// Just for FYI
+console.log(U1===T1); // Returning false to me Here 
