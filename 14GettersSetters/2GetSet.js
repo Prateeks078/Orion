@@ -13,4 +13,5 @@ const User={
 
 console.log(User.passwd); // So basically getters and setters ke aate hi Javascript is not treating it as 
 // functions instead it is treating them as properties that's why if u observed we didnt put bracket over there 
-// 
+
+// Getters and setters basically special methods h which i am putting above properties, no matter the properties are private or public 
